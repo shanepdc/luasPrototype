@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Luas</title>
+        <meta name="description" content="This is the offical Luas website.">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="nav">
+           <a href="#">News</a>
+            <a href="#">Journey Planner</a>
+           <a href="buyticket.html">Tickets</a>
+           <a href="#">Service Frequency</a>
+                <a href="index.html"><img src="images/logo.png" class="logoimg"></a>
+        </div>
+        
+           <img src="images/luasheader.png" class="img">
+        <div class="grid-containerP">
+            <div class="grid-itemP item1REAL">
+                <br>
+        
+            <h2 class="titleTag">Realtime Info</h2>
+
+                
+                <br>
+                <form action="jervis.html">
+               <p class="pInput">Red Line or Green Line</p>
+                <select name="Stops">
+                    <option value="Parnell" >Green Line</option>
+                    <option value="Abbey Street">Red Line</option>
+                </select>
+                    <br>
+                    <p class="pInput">Choose a Stop</p>
+                    
+                    <select name="Stops" id="luasSelect" onchange="myFunction()" >
+                    <option value="Parnell">Parnell</option>
+                    <option value="St-Stephens Green">St-Stephens Green</option>
+                    <option value="Abbey Street">Abbey Street</option>
+                    <option value="Jervis">Jervis</option>
+                </select>
+</form>
+                
+                <h3 id="stopSelection" class="titleTagJS"></h3>
+           <!--     <script>
+function myFunction() {
+  var x = document.getElementById("luasSelect").value;
+  document.getElementById("stopSelection").innerHTML = x;
+}
+</script>-->
+                
+                <br>
+            <div id="luasinbound">
+                <p class="nsBound">Northbound</p>
+                    <div class="inbound">
+                        <h3 class="rtLeft">Parnell</h3>
+                        <h3 class="rtRight">5 Minutes</h3>
+                    </div>
+                 
+                    <div class="inbound">
+                        <h3 class="rtLeft">Stephens Green</h3>
+                        <h3 class="rtRight">12 Minutes</h3>
+                    </div>
+                
+                    <div class="inbound">
+                            <h3 class="rtLeft">Parnell</h3>
+                            <h3 class="rtRight">19 Minutes</h3>
+                    </div>
+            </div>
+                 <div id="luasoutbound">
+                     <p class="nsBound">Southbound</p>
+                    <div class="outbound">
+                        <h3 class="rtLeft">Brides Glen</h3>
+                        <h3 class="rtRight">Due</h3>
+                    </div>
+                 
+                    <div class="outbound">
+                        <h3 class="rtLeft">Sandyford</h3>
+                        <h3 class="rtRight">6 Mins</h3>
+                    </div>
+                
+                    <div class="outbound">
+                        <h3 class="rtLeft">Brides Glen</h3>
+                        <h3 class="rtRight">19 Minutes</h3>
+                    </div>
+                     <br>
+                     <br>
+                     <a href="parnell.html">
+                         <br><br><br>
+                         <button class="uniButton">Full Stop Information</button></a>
+            </div>
+        </div>
+        
+        
+        <div class="grid-itemP item2JOURNEY">
+            <br>
+             <h2 class="titleTag">Plan Your Journey</h2>
+            <p class="pMargin">Plan your journey with us now. Simply enter your destination<br> and we will tell you the best route using our services.</p>
+            <br>
+           <div style="width: 100%"><iframe width="100%" height="200px" src="https://maps.google.com/maps?width=100%&amp;height=100&amp;hl=en&amp;q=parnell%20luas%20stop+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ><a href="https://www.maps.ie/draw-radius-circle-map/">Google Maps radius calculator</a></iframe></div><br />
+            <p class="pInput">Starting Point</p>
+             <input type="text">
+            <br>
+          
+            <p class="pInput">Destination</p>
+             <input type="text">
+             <br><br><br>
+            <button class="uniButton">Plan Journey</button>
+           
+        </div>
+        
+        <div class="grid-itemP item3NEWS">
+            <h2 class="titleTag">News & Updates</h2>
+            <h4 id="newsGreen">Green Line - Back to Normal</h4>
+        
+            <p class="pMargin">Swan on the Tracks,<br>
+                Luas Delay
+            Lorem ipsum dolor sit amet, consetetur </p>
+             <img src="images/readmore.png" id="readMore1">
+            <h4 id="newsRed">Red Line - Disruption</h4>
+            <p class="pMargin">Traffic Light Problem<br>
+            Lorem ipsum dolor sit amet, consetetur </p>
+            <img src="images/readmore.png" id="readMore2">
+           
+        </div>
+        
+        <div class="grid-itemP item4TICKET">
+            <h2 class="titleTagFare">Calculate Your Fair</h2>
+           
+           <div class="fareContainer">
+        <div class="fareNum1">
+            <p class="fareTitle">Cash</p>
+            <h2 id="fareAmount">€3.10</h2>
+            </div>
+        <div class="fareNum2">
+            <img src="images/leap.png" class="leapImg">
+            <h2 id="fareAmount2">€3.10</h2>
+            </div>
+            </div>
+            <form action="/action_page.php">
+                <p class="pInput">Luas Line</p>
+                
+                <select id="LuasLine" name="LuasLin">
+                    <option value="Greenline">Green line</option>
+                    
+                     <option value="Redline">Red line</option>
+                </select>
+            </form>
+            <br>
+            <p class="pInput">Starting Stop</p>
+            
+            <select id="LuasLine" name="LuasLin">
+                    <option value="Please Select"> - Please Select a Stop - </option>
+                    
+                     <option value="Broombridge">Broombridge</option>
+                <option value="Broadstone - DIT">Broadstone - DIT</option>
+                <option value="Parnell">Parnell</option>
+                <option value="Redline">Red line</option>
+                <option value="Trinity">Trinity</option>
+                <option value="O'Connell Upper.">O'Connell Upper.</option>
+            </select>
+            <br>
+             <p class="pInput">Destination</p>
+     <select id="LuasLine" name="LuasLin">
+                    <option value="Please Select"> - Please Select a Stop - </option>
+                    
+                     <option value="Broombridge">Broombridge</option>
+                <option value="Broadstone - DIT">Broadstone - DIT</option>
+                <option value="Parnell">Parnell</option>
+                <option value="Redline">Red line</option>
+                <option value="Trinity">Trinity</option>
+                <option value="O'Connell Upper.">O'Connell Upper.</option>
+            </select>
+            
+            <br>
+             <p class="pInput">Passenger Status</p>
+           <input type="button" class="buttonInput" value="Adult">
+            <input type="button" class="buttonInputHalf1" value="Child">
+            
+            <input type="button" class="buttonInputHalf2" value="Student">
+            
+            <input type="button" class="buttonInputHalf2" value="OAP">
+           
+            
+           
+        </div>
+        
+        <div class="grid-itemP item5FARE">
+            <h2 class="titleTagTicket">Purchase a Ticket</h2>
+            
+            <p class="pMargin">Purchasing a ticket could not<br> be easier.
+                Simply pick your <br>destination, pay for the ticket <br>and enjoy your journey.</p>
+            
+              <a href="buyticket.html"><button class="ticketButtonHome">Get Ticket</button></a>
+        </div>
+            
+        </div>
+        
+<script src="js/luasH1.js"></script>
+    </body>
+</html>
+
